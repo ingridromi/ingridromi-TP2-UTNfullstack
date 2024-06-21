@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/personajes.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/personajes.html">Personajes</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main>
+        <section id="cabecera">
+    
+          <h1>Personajes | Harry Potter</h1>
+    
+          <div id="search-container">
+            <input type="text" id="buscador" placeholder="Busca tu personaje..." />
+            <button onclick="search();">Buscar</button>
+            <button onclick="refresh();">Resetear</button>
+          </div>
+        </section>
+        <section>
+          <div id="no-results"></div>  
+          <div id="personajes"></div>
+          <script src="./fetch.js"></script>
+        </section>
+    
+      </main>
+      <footer>
+        <p>Copyright 2024 &copy;. Todos los derechos reservados. Desarrollado por IR Digital Online.</p>
+    </footer>
+
+    <script src="fetch.js"></script>
+</body>
+</html>
