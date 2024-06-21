@@ -4,37 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/personajes.css">
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
-          <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/personajes.html">Personajes</a></li>
-          </ul>
+            
+            <div class="nav1">
+                
+                <a href="index.html">Inicio</a>
+                
+                
+            </div>
+            <div class="nav2">
+            <ul>
+                <li id="search-container">
+                    <input type="text" id="buscador" placeholder="Busca tu personaje..." />
+                    <button onclick="search();">Buscar</button>
+                    <button onclick="refresh();">Limpiar</button>
+                </li>
+            
+            </ul>
+        </div>
         </nav>
+     
+        
+       
       </header>
     
       <main>
+        
         <section id="cabecera">
+          
+            
     
-          <h1>Personajes | Harry Potter</h1>
+          <div><h1>Bienvenido al mundo de Magos y Hechiceros </h1></div>
+          <h3>En la Saga de Harry Potter, hay cientos de personajes, algunos protagonistas, otros secundarios, otros solo nombrados una vez, etc. Aquí podrás encontrar una lista con todos los personajes de esta Saga e información adicional de cada uno de los personajes. </h3>
     
-          <div id="search-container">
-            <input type="text" id="buscador" placeholder="Busca tu personaje..." />
-            <button onclick="search();">Buscar</button>
-            <button onclick="refresh();">Resetear</button>
-          </div>
+         
         </section>
         <section>
-          <div id="no-results"></div>  
+          <div id="not-found"></div>  
           <div id="personajes"></div>
-          <script src="./fetch.js"></script>
+
+    
         </section>
     
       </main>
+
       <footer>
+        <div> <img src="/img/hp-removebg-preview.png" id="hp" height="50px" width="50px"></div>
         <p>Copyright 2024 &copy;. Todos los derechos reservados. Desarrollado por IR Digital Online.</p>
     </footer>
 

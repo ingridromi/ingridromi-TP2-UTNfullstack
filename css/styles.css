@@ -8,7 +8,9 @@
 }
 
 :root {
-    --color-primario: rgba(143, 9, 9, 0.849);
+    --color-primario:#a6332e;
+}
+:root{--color-secundario: #efbc2f;
 }
 
 body {
@@ -36,9 +38,10 @@ nav {
     width: 100vw;
     justify-content: flex-end;
     flex-direction: column;
-    padding: 2px 4px;
+    padding: 2px 20px;
+    
 
-    color: yellow;
+    color: var(--color-secundario);
     font-family: 'Harry Potter', sans-serif;
 
 }
@@ -59,6 +62,7 @@ nav {
 
 nav h2 {
     font-size: 50px;
+    text-shadow: 2px 4px 6px #000000;
 }
 
 nav ul {
@@ -66,20 +70,31 @@ nav ul {
     justify-content: flex-end;
     padding: 0;
 }
-
+nav a{
+    font-family: 'Harry Potter', sans-serif;
+    text-shadow: 2px 2px 4px #000000; 
+}
 nav ul li {
+  
     margin: 0 1em;
-    color: yellow;
+    color: var(--color-secundario);
 }
 
 nav a:hover {
-    margin: 0 1em;
+    
     color: white;
 }
 
 nav a {
-    color: yellow;
+    color: var(--color-secundario);
     text-decoration: none;
+}
+.contenedor-general{
+    flex-direction: column;
+    height: 100vh;
+}
+.contenedor-central{
+    flex: 1;
 }
 
 main {
@@ -91,12 +106,16 @@ main {
 }
 h2{
     font-family: 'Harry Potter', sans-serif;
+    text-shadow: 2px 2px 4px #a6332e; 
+
 }
 .intro{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Quattrocento", serif;
+    text-shadow: none;
 }
 li {
     text-align: justify;
+    
 }
 
 div {
@@ -122,12 +141,12 @@ img {
     box-shadow: 5px 8px 15px;
 
 }
-h2, p, ul{padding: 10px;
-margin: px;}
+h2, p, ul{padding: 5px;
+}
 
 footer {
     background-color: var(--color-primario);
-    color: yellow;
+    color:var(--color-secundario);
     text-align: center;
     padding: 1em 0;
     position: fixed;
@@ -147,7 +166,10 @@ footer {
         margin: 0.5em 0;
     }
 }
-
+footer {
+    padding: 0.5em 0;
+    text-shadow: 2px 2px 4px  #a6332e; 
+}
 @media (max-width: 480px) {
     header {
         padding: 0.5em 0;
@@ -158,20 +180,14 @@ footer {
         align-items: center;
     }
 
-    nav ul li {
-        margin: 0.5em 0;
-    }
+   
 
-    main {
-        padding: 0.5em;
-    }
+   
 
     .main-section0 {
         display: flex;
         flex-direction: column;
     }
 
-    footer {
-        padding: 0.5em 0;
-    }
+    
 }
