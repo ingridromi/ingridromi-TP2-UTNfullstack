@@ -31,7 +31,7 @@ function includeName(personaje, name) {
 }
 
 function fetching(name) {
-  $personajesContainer.innerHTML = "#";
+  $personajesContainer.innerHTML = "";
   fetch("https://hp-api.onrender.com/api/characters")
     .then((respuesta) => respuesta.json())
     .then((data) => {
